@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    {{ bootstrap.load_css() }}
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+    <title>Color-Palette</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <div class="container text-center">
+            <div class="card-body d-flex flex-column">
+              <h3 class="mb-0">
+                Color Palette Generator
+                {{num}}
+              </h3>
+              <p>Upload your image to generate a color palette.</p>
+              <a href="#" class="btn btn-primary">Upload</a>
+            </div>
+            <img data-src="{{url_for('static', filename='assets/OnePunchMan.jpg')}}" alt="Thumbnail [200x250]" src="{{url_for('static', filename='assets/OnePunchMan.jpg')}}" data-holder-rendered="true" style="width: 35%; height: 35%;">
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
