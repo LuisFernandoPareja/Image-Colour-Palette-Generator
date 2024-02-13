@@ -41,7 +41,4 @@ def gen_color_palette(img):
 
     return palette_list
 
-
-gen_color_palette(img='a')
-
 # cv.waitKey(0)
